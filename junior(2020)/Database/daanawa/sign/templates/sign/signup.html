@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <title>DAANAWA</title>
+    </head>
+    <body>
+
+
+        <div class = "container">
+            <br>
+            <h1> D  A A   N  A W A </h1>
+            <h1>sign up!</h1>
+            <br>
+            <form method="POST" action="">
+                {% csrf_token %}
+                UserID:<br>
+                <input name="userid"type="text" required minlength="3" maxlength="15">
+                <br>
+                Password:<br>
+                <input name="userpw" type="password" required minlength="7" maxlength="15">
+                <br>
+                Nickname:<br>
+                <input name="nickname" type="text">
+                <br>
+                Age:<br>
+                <input name="age" type="number">
+                <br>
+                Address:<br>
+                <input name="address" type="text">
+                <br>
+                Gender:<br>
+                <input name="gender" type="radio" id="male" value="male">
+                <label for="male">Male</label>
+                <input name="gender" type="radio" id="female" value="female">
+                <label for="female">Female</label>
+                <br><br>
+                <input type="submit" value="sign up">
+            </form>
+        </div>
+    <body>
+</html>

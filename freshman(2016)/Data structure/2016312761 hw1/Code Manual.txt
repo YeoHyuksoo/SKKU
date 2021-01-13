@@ -1,0 +1,20 @@
+Code Manual 2016312761 Yeo Hyuk soo
+
+I made some 2-dimensional array whose range is 1000*1000.
+And out limit of the number of input is 10000, so I made other
+array variables that contain a x-coordinate, y-coordinate and number value.
+And first, we open a kind of input file.
+We should get some values from file such as choice, which do you want to
+run(r or c), the size of matrix(x-axis and y-axis), and the numbers
+goes to each coordinates of matrix.
+We should close the file, now.
+Then, we can have two case, whether choice is r or c.
+Both r or c, we should do two action, and one action must read matrix widthwise
+, another action must read matrix lengethwise.
+Then, we read numbers only that is not zero whether widthwise way or lengethwise way. 
+Any actions, these values are x-coordinate, y-coordinate, and numbers.
+But their sequences are little bit different,
+ so I omit the explanation of various sequences.
+And we should print some values in another output files.
+Lastly, close the files, and we can get ultimate results in the files.
+ 

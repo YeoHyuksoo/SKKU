@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <title>DAANAWA</title>
+    </head>
+    <body>
+        <h1>DAANAWA</h2>
+        <br>
+
+        <div class = "container">
+            <h2>LOG IN</h2>
+
+            <form method="POST" action="">
+                {% csrf_token %}
+                UserID:<br>
+                <input name="userid"type="text">
+                <br>
+                Password:<br>
+                <input name="userpw" type="password">
+                <br>
+                <br><br>
+                <input type="submit" value="sign in"><a href="../signup"> sign up</a>
+            </form>
+        </div>
+    <body>
+</html>

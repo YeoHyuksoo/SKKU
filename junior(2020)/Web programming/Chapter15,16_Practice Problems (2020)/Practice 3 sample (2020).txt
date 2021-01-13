@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jQuery Mobile</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+	.tablist-left{
+		width: 25%;
+		display: inline-block;
+	}
+	.tablist-content{
+		width: 60%;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5%;
+	}
+  </style>
+</head>
+
+<body>
+  <h2>Use insert listview for tab</h2>
+  <div data-role="tabs">
+            <!-- add listview for the left side -->
+  </div>
+  <ul>
+	<!-- add 'My Favorite Food Recipes' from Problem #1 -->
+  </ul>
+  <ul>
+	<!-- add 'Movie Table' from Problem #2 -->
+  </ul>
+</body>
+</html>

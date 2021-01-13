@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>LOG IN</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 style="font-family: 'Poor Story' "><img style="width: 200px; height: 80px;" src="daanawa.png" alt="DAANAWA">로그인</h1>
+  </header>
+  <nav>
+    <h1 style="font-family: 'Poor Story'; font-size: 85%;">다른 방법으로 로그인</h1>
+    <ul>
+      <li>
+        <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"><img style="width:40px;" src="naver.png" alt="NAVER"></a>
+        <p>네이버 로그인</p>
+      </li>
+      <li>
+        <a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fauth.danawa.com%252Fsns%252Fcallback%253Ftype%253DKAKAO%26client_id%3Db0cb9ef1eb934d10eea2140751a45d13">
+          <img style="width: 40px;" src="kakaotalk.png" alt="KAKAOTALK">
+        </a>
+        <p>카카오톡 로그인</p>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=195707104118397&kid_directed_site=0&app_id=195707104118397&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.5%2Fdialog%2Foauth%3Fclient_id%3D195707104118397%26response_type%3Dcode%26scope%3Dpublic_profile%252Cuser_friends%252Cemail%26redirect_uri%3Dhttps%253A%252F%252Fauth.danawa.com%252Fsns%252Fcallback%253Ftype%253DFACEBOOK%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3De779a02c-4a00-4ba2-86f9-be72cf984765&cancel_url=https%3A%2F%2Fauth.danawa.com%2Fsns%2Fcallback%3Ftype%3DFACEBOOK%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&display=page&locale=ko_KR&pl_dbl=0">
+          <img style="width: 40px;"src="facebook.png" alt="FACEBOOK">
+        </a>
+        <p>페이스북 로그인</p>
+      </li>
+    </ul>
+  </nav>
+  <section id="content">
+    <input type="checkbox" name="로그인 유지" value="">로그인 유지
+    <form action="../main/main.html" method="get">
+      <article>
+        <br>
+        <input style="font-size: 180%;" type="text" placeholder="아이디" name="id">
+
+        <input style="font-size: 180%;" type="password" placeholder="비밀번호" name="pw">
+      </article>
+      <br>
+      <article>
+        <button type="submit"><span style="font-family: 'Poor Story'; color: #fff; font-size: 150%;">로그인</span></button>
+      </article>
+    </form>
+    <p style="float: right; font-family: 'Poor Story'; font-size: 130%;"><a href="../signup/signup.html">회원가입</a></p>
+    <br>
+    <p>
+      <img style="width: 90%; height: 80px;" src="login_event.jpg" alt="login_event">
+    </p>
+  </section>
+  <footer><p style="font-family: 'Poor Story' ">Copyright © danawa Co., Ltd. All Rights Reserved.</p></footer>
+</body>
+
+</html>

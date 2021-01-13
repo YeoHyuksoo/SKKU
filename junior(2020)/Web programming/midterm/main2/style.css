@@ -1,0 +1,236 @@
+body {
+  background-color: black;
+  margin: 0 auto;
+}
+header {
+  background-color: #fff;
+}
+
+header input{
+  height: 40px;
+  width: 30%;
+  border-color: #ff1212;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+header a{
+  font-family: 'Poor Story';
+}
+
+header button{
+  background-color: transparent;
+  height: 40px;
+  border-radius: 20px;
+  border-color: #ff1212;
+}
+
+input:focus{
+  outline: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+.wrapper{
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 80%;
+}
+
+.sec-menu-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: 0 2px 2px 0 red;
+  height: 40px;
+  font-size: 13px;
+}
+
+.sec-menu {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.sec-menu-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sec-menu-left ul{
+   padding-left: 0;
+}
+
+
+.sec-menu-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec-menu ul{
+    list-style-type: none;
+}
+
+.sec-menu ul li{
+    display: inline;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Poor Story';
+}
+
+.sec-menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sec-menu ul li:hover{
+    text-decoration: underline;
+}
+
+.wrapper .products-display{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  flex-basis: 22.5%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: black;
+}
+.product .product-image{
+  border: solid 1px #ccc;
+  padding: 5px;
+  flex: 2;
+}
+.product .product-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.product .product-description{
+  flex: 1;
+  font-family: arial;
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+.absimg{
+  position: fixed;
+  top: 30%;
+  left: 5%;
+}
+
+.absimg2{
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  animation-name: bounce;
+  animation: bounce 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+nav {
+  display: table-cell;
+  background-color: #bbbbbb;
+  padding: 15px;
+  font-family: 'Poor Story';
+}
+
+.absmenu table{
+  position: fixed;
+  top: 30%;
+  right: 3%;
+  font-family: 'Poor Story';
+}
+
+.absmenu table, td{
+  border: 2px solid gray;
+  border-left: none;
+  border-right: none;
+  color: lightgray;
+}
+
+.headertable table, th, td{
+  background-color: black;
+  margin: 0 auto;
+  color: #fff;
+  border: 2px solid gray;
+  border-collapse: collapse;
+}
+
+.headertable td{
+  font-size: 80%;
+  padding: 5px;
+}
+
+section#content{
+  display: table-cell;
+  padding: 15px;
+}
+
+section#content table td{
+  border-left: none;
+  border-right: none;
+  font-family: 'Rubik';
+}
+
+section#content img{
+  height: 300px;
+}
+
+.pname button{
+  color: #fff;
+  outline: none;
+  background-color: orange;
+  animation-name: blink;
+  animation: blink 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+
+@keyframes blink {
+  0%{opacity: 0;}
+  10%{opacity: 1;}
+}
+
+section#content .price{
+  font-family: 'Lobster';
+}
+
+.price button{
+  width: 70%;
+  height: 30%;
+  background-color: gray;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer{
+  font-style: italic;
+}

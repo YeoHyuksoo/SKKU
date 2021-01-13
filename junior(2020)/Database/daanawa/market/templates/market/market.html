@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <title>daanawa MARKET</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>daanawa MARKET</h1>
+  <img src="{% static "img/market1.jpg" %}" width="800" height="180">
+  <img src="{% static "img/market2.jpg" %}" width="800" height="180">
+  <ul>
+    <li><a href = "bucket/">go to my bucket</a></li>
+    <li><a href = "../../signin">LOG OUT</a></li>
+  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>Picture</th>
+        <th>Name</th>
+        <th>Released Date</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for computer in computers %}
+    <form method="POST" action="">
+      {% csrf_token %}
+      <tr>
+        <td><img src="{% static "img" %}/{{computer.id}}.jpg" width="200" height="300"></td>
+        <td>{{computer.name}}</td>
+        <td>{{computer.released}}</td>
+        <td>{{computer.price}}</td>
+        <td><input type="submit" name="piece" value="{{computer.id}}" style="height:50px; width:50px;"/>put in bucket!</td>
+        <td><input type="submit" name="like" value="{{computer.id}}" style="height:50px; width:50px;"/>put in like!</td>
+      </tr>
+    </form>
+    {% endfor %}
+
+      
+    </tbody>
+    <tfoot>
+      <td>Total</td>
+			<td>28</td>
+    </tfoot>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "113939230466",
+    "firebase_url": "https://mysweproject2-43357.firebaseio.com",
+    "project_id": "mysweproject2-43357",
+    "storage_bucket": "mysweproject2-43357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113939230466:android:c54c913d4094f89bd21c1b",
+        "android_client_info": {
+          "package_name": "edu.skku.map.week10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113939230466-1909s3jr8cegdp8p51kjfm5m400svtsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFOTK2qPNXSVDvCVFkiW7qcUdDxAqWsvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113939230466-1909s3jr8cegdp8p51kjfm5m400svtsu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

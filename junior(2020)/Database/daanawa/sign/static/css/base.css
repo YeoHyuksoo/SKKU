@@ -1,0 +1,34 @@
+
+h1 {
+    color: #008800;
+    font-size: 100pt;
+    font-family: 'Rubik';
+    padding-left: 240px;
+}
+
+h2 {
+    color: #FCA205;
+    font-size: 50pt;
+    font-family: 'Lobster';
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+body {
+    padding-left: 25px;
+}
+
+.container{
+    color: #825882;
+    font-size:18pt;
+    font-family: 'Rubik';
+}
+
+intro {
+    color: #0012FF;
+    font-size: 50pt;
+    font-family: 'Rubik';
+    padding-left: 200px;
+}

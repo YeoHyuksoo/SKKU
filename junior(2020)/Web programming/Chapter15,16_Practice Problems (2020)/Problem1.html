@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- jQuery mobile using css, javascript. Load these three datas below. -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="page" data-title="Favorite food list">
+    <div data-role="header" data-backbtn="true">
+      <h1>Favorite food</h1>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview">
+        <li>
+          <img src="fried-chicken.jpg" alt="" height="100px" width="100px">
+          <br>
+          <p style="font-size: 16px;">(1) Fried Chicken</p>
+          <input type="text" name="" value="Please describe how the food taste like">
+          <button data-icon="check" type="button" name="button" onclick="location.href='https://www.gq.com/story/summer-is-for-fried-chicken'">Click for recipe</button>
+        </li>
+        <li>
+          <img src="sandwich.jpg" alt="" height="100px" width="100px">
+          <br>
+          <p style="font-size: 16px;">(2) Sandwich</p>
+          <input type="text" name="" value="Please describe how the food taste like">
+          <button data-icon="check" type="button" name="button" onclick="location.href='https://www.indianhealthyrecipes.com/sandwich-recipes/'">Click for recipe</button>
+        </li>
+        <li>
+          <img src="jajangmyeon.jpg" alt="" height="100px" width="100px">
+          <br>
+          <p style="font-size: 16px;">(3) Blackbean sauce Noodles</p>
+          <input type="text" name="" value="Please describe how the food taste like">
+          <button data-icon="check" type="button" name="button" onclick="location.href='https://www.saveur.com/story/recipes/korean-black-bean-noodles/'">Click for recipe</button>
+        </li>
+        <li>
+          <label for="txt4"><u>My Information</u></label>
+          <ul>
+            <li><b>Name</b> : Hyuksoo Yeo</li>
+            <li><b>University</b> : Sungkyunkwan University</li>
+            <li><b>Goal</b> : AI programmer</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div data-role="footer" class="ui-bar" data-position="fixed">
+      <div data-role="controlgroup" data-type="horizontal">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

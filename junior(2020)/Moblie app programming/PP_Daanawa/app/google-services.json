@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13382759069",
+    "firebase_url": "https://daanawa-dec1f.firebaseio.com",
+    "project_id": "daanawa-dec1f",
+    "storage_bucket": "daanawa-dec1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13382759069:android:525e1227c90348044a9a74",
+        "android_client_info": {
+          "package_name": "edu.skku.map.pp_daanawa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13382759069-sob6ga2bu7dgtib4nnjbe5fhblt3dugq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdDSSTJfTfTMb_Kb1U8b3LUW4Wl_vpXLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13382759069-sob6ga2bu7dgtib4nnjbe5fhblt3dugq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+
+  body {
+    background-color: #eeeee9;
+    margin: 0px auto;
+    width: 40%;
+  }
+  header {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0px;
+    padding: 25px;
+  }
+  h1 {
+    margin: 0px;
+  }
+  section#content{
+    display: table-cell;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-left: 10px;
+  }
+  nav{
+    display: table-cell;
+    background-color: #ffffff;
+    padding: 15px;
+    font-family: 'Poor Story'
+  }
+  footer {
+    background-color: #954b4b;
+    color: #efe5d0;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 90%;
+  }
+  li img{
+    height: 40px;
+  }
+
+  li p{
+    font-size: 80%;
+  }
+
+  article input{
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    height: 70px;
+    width: 90%;
+  }
+
+  article input:focus{
+    outline: none;
+    border-color: blue;
+  }
+
+  article button {
+    border: 2px solid blue;
+    background-color: #90c3ff;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+  }

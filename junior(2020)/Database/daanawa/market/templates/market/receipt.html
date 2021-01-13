@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>Your Receipt - DAANAWA</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <ul class="navigation">
+    <li><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png" height="20px;"></li>
+    <li class="active">Your Delivery Address :</li>
+    {% for receipt in receipts|slice:":1" %}
+        <li class="active">{{receipt.address}}</li>
+    {% endfor %}
+  </ul>
+  <br>
+  <div class="active">Deliver Like Bullet!!Deliver Like Bullet!!Deliver Like Bullet!!Deliver Like Bullet!!</div>
+  <div class="search">Thank you for buying! We will do our best to deliver your computer safe as well as fast.</div>
+  <h1>Your Receipt</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Buyer구매자</th>
+        <th>Destination도착지</th>
+        <th>TOTAL price(원)</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for receipt in receipts %}
+      <tr>
+        <td>{{receipt.userid.userid}}</td>
+        <td>{{receipt.address}}</td>
+        <td>{{receipt.total}}</td>
+      </tr>
+    {% endfor %}
+    
+    </tbody>
+  </table>
+  <div class="tname"><a href="../">Return to market</a></div><br>
+  <div class="tname"><a href="../bucket">Return to my bucket</a></div>
+
+</body>
+</html>

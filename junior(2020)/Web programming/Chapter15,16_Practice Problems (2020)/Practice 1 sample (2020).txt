@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <title>My Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <!-- jQuery mobile using css, javascript. Load these three datas below. -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="page" data-title="Favorite food list">
+    <div data-role="header" data-backbtn="true">
+      <h1>Favorite food</h1>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview">
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+          <label for="txt4"><u>My Information</u></label>
+          <ul>
+            <li><b>Name</b> : </li>
+            <li><b>University</b> : </li>
+            <li><b>Goal</b> : </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div data-role="footer" class="ui-bar" data-position="fixed">
+      <div data-role="controlgroup" data-type="horizontal">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

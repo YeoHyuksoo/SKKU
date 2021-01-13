@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <title>daanawa administrator</title>
+    </head>
+    <body>
+
+
+        <div class = "container">
+            <br>
+            <h1> D  A A   N  A W A </h1>
+            <h2>adding pieces</h2>
+            <br>
+            <form method="POST" action="">
+                {% csrf_token %}
+                Name:<br>
+                <input name="name"type="text" required maxlength="20">
+                <br>
+                Introduction:<br>
+                <input name="introduction" type="text">
+                <br>
+                Released Time:<br>
+                <input name="released" type="datetime">
+                <br>
+                Price:<br>
+                <input name="price" type="number">
+
+                <br><br>
+                <input type="submit" value="add">
+            </form>
+        </div>
+    <body>
+</html>

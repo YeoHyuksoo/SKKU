@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Encrypt!</title>
+	<script type="text/javascript">
+    window.onload = function(){
+      document.getElementById("encrypt").onclick = function(){
+        popup();
+        if(document.getElementById("type").value == "shift"){
+          shift_cipher();
+        }
+        else{
+          random_cipher();
+        }
+      }
+    }
+
+    function shift_cipher(){
+      let i = 0;
+      let text = document.getElementById("plain_text").value;
+      let newtext = "";
+      let val = document.getElementById("val").value;
+      for(var j=0;j<text.length;j++){
+        if(text[j]>='A' && text[j]<='Z'){
+          var ascii = text.charCodeAt(j);
+          for(var k = 0;k<val;k++){
+            ascii--;
+            if(ascii==64){
+              ascii=90;
+            }
+          }
+          newtext+=String.fromCharCode(ascii);
+        }
+        else if(text[j]>='a' && text[j]<='z'){
+          var ascii = text.charCodeAt(j);
+          for(var k = 0;k<val;k++){
+            ascii--;
+            if(ascii==96){
+              ascii=122;
+            }
+          }
+          newtext+=String.fromCharCode(ascii);
+        }
+        else{
+          newtext+=text[j];
+        }
+      }
+      document.getElementById("output").innerHTML = newtext;
+    }
+    function random_cipher(){
+      let encrypt = [];
+      let i = 0;
+      let text = document.getElementById("plain_text").value;
+      let newtext = "";
+      while(i<26){
+        let n = getRandomInt(0, 26);
+        if(!sameNum(n)){
+          encrypt.push(n);
+          i++;
+        }
+      }
+      function sameNum(n){
+        for(var j = 0;j<encrypt.length;j++){
+          if(n === encrypt[j]){
+            return true;
+          }
+        }
+        return false;
+      }
+      for(var j=0;j<text.length;j++){
+        if(text[j]>='A' && text[j]<='Z'){
+          var ascii = 65+encrypt[text.charCodeAt(j)-65];
+          newtext+=String.fromCharCode(ascii);
+        }
+        else if(text[j]>='a' && text[j]<='z'){
+          var ascii = 97+encrypt[text.charCodeAt(j)-97];
+          newtext+=String.fromCharCode(ascii);
+        }
+        else{
+          newtext+=text[j];
+        }
+      }
+      document.getElementById("output").innerHTML = newtext;
+    }
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+  </script>
+  </head>
+  <body>
+    <script src="encrypt.js" type="text/javascript">
+
+    </script>
+    <h1>Encrypt!</h1>
+	<h2>Translate any text message into a super-secret cipher!</h2>
+	<fieldset>
+		<legend>Text to Encrypt</legend>
+		<textarea id="plain_text" cols="60" rows="10"></textarea>
+	</fieldset>
+	<fieldset>
+		<legend>Encrypt Options</legend>
+		<strong>Cipher Type</strong>:
+		<select id="type">
+			<option value="shift">Shift Cipher</option>
+			<option value="random">Randomized</option>
+		</select>
+		<select id="val">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+		</select>
+		<button id="encrypt">Encrypt!</button>
+	</fieldset>
+    <div id="output"></div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <title>MENU</title>
+    </head>
+
+    <body>
+      <h1>DAANAWA<br>
+      <img src="{% static "img/s1.jpg" %}">
+            <img src="{% static "img/s2.jpg" %}" width="60" height="60">
+            <img src="{% static "img/s3.jpg" %}">
+            <img src="{% static "img/s4.jpg" %}">
+            <img src="{% static "img/s5.jpg" %}">
+            <img src="{% static "img/s6.jpg" %}">
+            <img src="{% static "img/s7.jpg" %}"></h1>
+      <intro>Welcome {{user.mem_name}}!<img src="{% static "img/pixel-person.jpg" %}" width="150" height="200"> age : {{user.age}} {{user.gender}}<br>
+      </intro>
+      <h2><a href="../market/{{user.id}}">Make my computer</a></h2>
+      <br>
+      <h2><a href="../market/{{user.id}}/bucket">Go to shoppingbucket</a></h2>
+      <br><br>
+      <div>
+        <h2>About DA ANA WA</h2>
+        <p>This website is shopping computer site. 
+        <br>You can estimate your computer or put some computer pieces into your shopping bucket. Also you can buy things in your ultimate bucket.</p>
+      </div>
+      <div>
+        <h2>About CEO</h2>
+        <h3>Name: Hyuksoo Yeo</h3>
+        <h3>Profile >></h3>
+        <p>Born in pohang, Korea.<br>24 years old, graduate SKKU in 2016.</p>
+      </div>
+      {% if user.id %}
+         <h3><a>Add some computer pieces(only administrator)</a></h3>
+      {% else %}
+        <h3><a href="../administrator">Add some computer pieces(only administrator)</a></h3>
+      {% endif %} 
+  </body>
+
+</html>

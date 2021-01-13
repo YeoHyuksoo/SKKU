@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>SIGN UP</title>
+  </head>
+  <body>
+    <header>
+      <h1><img style="width: 25%; height: 50px;"src="daanawa.png" alt="DAANAWA">회원가입</h1>
+    </header>
+    <nav>
+      <h1 style="font-size: 100%;">약관 동의</h1>
+      <table>
+        <tr>
+          <td>
+            <p>서비스 이용 약관 <b style="color: red">(필수)</b><input type="checkbox" id="check1" name="" value=""></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>개인정보 수집 및 이용 안내 <b style="color: red">(필수)</b><input type="checkbox" id="check2" name="" value=""></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>만 14세 이상 확인 <b style="color: red">(필수)</b><input type="checkbox" id="check3" name="" value=""></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>메일 수신 여부 <b style="color: skyblue">(선택)</b><input type="checkbox" id="check4" name="" value=""></p>
+          </td>
+        </tr>
+      </table>
+
+    </nav>
+    <section id="content">
+      <article>
+        <h1 style="font-size: 100%;">정보 입력<b style="color: gray; font-weight: bold; font-size: 70%; float: right">*표시는 필수 입력 항목입니다.</b></h1>
+        <form action="../main/main.html" method="get">
+          <table style="background-color: #fff;">
+            <tr>
+              <td>
+                <p>이메일*</p>
+              </td>
+              <td>
+                <input type="text" id="emailID" name="" value="">@<input type="text" id="flatform" name="" value="">
+              </td>
+              <td>
+                <select id="selectBox-email" title="">
+                  <option value="">직접입력</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="hanmail.net">hanmail.net</option>
+                  <option value="nate.com">nate.com</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="daum.net">daum.net</option>
+                  <option value="empal.com">empal.com</option>
+                  <option value="korea.com">korea.com</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>아이디*</p>
+              </td>
+              <td>
+                <input type="text" id="identify" name="id" value="">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>비밀번호*</p>
+              </td>
+              <td>
+                <input type="password" id="pw" name="pw" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>비밀번호확인*</p>
+              </td>
+              <td>
+                <input type="password" id="pw2" name="pwcheck" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>이름*</p>
+              </td>
+              <td>
+                <input type="text" id="name" name="name" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>성별</p>
+              </td>
+              <td>
+                <input type="radio" name="gender" value="male">남자
+                <input type="radio" name="gender" value="female">여자
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>닉네임</p>
+              </td>
+              <td>
+                <input type="text" id="nickname" name="nickname" value="">
+              </td>
+            </tr>
+          </table>
+          <button style="font-family:'Rubik'; font-size: 16px; margin-top: 15px; width: 35%; height: 50px; background-color: #ddeeed;" type="submit" name="signin success">Sign up & Login</button>
+        </form>
+      </article>
+    </section>
+    <footer>
+      <b style="font-size: 200%;"><span style="color: skyblue;">다안나와 서비스 이용</span>을 환영합니다.</b><br><br>
+      Copyright © daanawa Co., Ltd. All Rights Reserved.
+    </footer>
+  </body>
+</html>

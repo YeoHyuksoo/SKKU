@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jQuery Mobile</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+  <form>
+    <input id="filterTable-input" data-type="">
+  </form>
+  <table data-role="table" id="movie-table" class="ui-responsive">
+    <thead>
+      <tr>
+        <th data-priority="1">Rank</th>
+        <th data-priority="persist">Movie Title</th>
+        <th data-priority="2">Year</th>
+        <th data-priority="3"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+        <th data-priority="4">Reviews</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+      </tr>
+      <tr>
+
+      </tr>
+      <tr>
+
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

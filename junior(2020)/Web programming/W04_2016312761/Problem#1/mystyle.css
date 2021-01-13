@@ -1,0 +1,11 @@
+[type]{color: blue;}
+span[lang] {font-weight:bold;}
+span[lang="pt"] {color:green;}
+span[lang~="en-us"] {color: blue;}
+span[lang|="zh"] {color:red;}
+a[href^="#"] {background-color: gold;}
+span[class^="main"] {background-color: yellow;}
+a[href$=".cn"] {color: red;}
+a[href$=".jp"] {color: blue;}
+a[href*="example"] {background-color: #CCCCCC;}
+.basic{color: blue;}

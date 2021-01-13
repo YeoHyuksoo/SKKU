@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>Shopping Bucket - DAANAWA</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <ul class="navigation">
+    <li><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png" height="20px;"></li>
+    <li class="active">Your Delivery Address :</li>
+    {% for member in members %}
+    <li class="active">{{member.address}}</li>
+    {% endfor %}
+  </ul>
+  <br>
+  <div class="active">Deliver Like Bullet!!Deliver Like Bullet!!Deliver Like Bullet!!Deliver Like Bullet!!</div>
+  <div class="search">PLEASE Check your shopping bucket & LIKE list.</div>
+  <div class="tname">shopping bucket</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for my in mys %}
+    <form method="POST" action="">
+      {% csrf_token %} 
+      <tr>
+        <td>{{my.name}}</td>
+        <td>{{my.price}}</td>
+        <td><input type="submit" name="delete" value="{{my.id}}" style="height:50px; width:50px;"/>DELETE IN BUCKET</td>
+      </tr>
+    </form>
+    {% endfor %}
+    
+    </tbody>
+  </table>
+  <div class="tname2"><p>Total price: {{total}} (won)</p><a href="../receipt">BUY THESE</a></div>
+  <div class="tname">LIKE List</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Introduction</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for like in likes %}
+    <form method="POST" action="">
+      {% csrf_token %} 
+      <tr>
+        <td>{{like.name}}</td>
+        <td>{{like.introduction}}</td>
+        <td>{{like.price}}</td>
+        <td><input type="submit" name="like" value="{{like.id}}" style="height:50px; width:50px;"/>DELETE IN LIKE</td>
+      </tr>
+    </form>
+    {% endfor %}
+    
+    </tbody>
+  </table>
+  <div class="tname"><a href="../">Return to market</a></div><br>
+  <div class="tname"><a href="../../../signin">LOG OUT</div>
+
+</body>
+</html>

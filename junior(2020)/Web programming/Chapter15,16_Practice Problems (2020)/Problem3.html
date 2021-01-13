@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jQuery Mobile</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+	.tablist-left{
+		width: 25%;
+		display: inline-block;
+	}
+	.tablist-content{
+		width: 60%;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5%;
+	}
+  </style>
+</head>
+
+<body>
+  <h2>Use insert listview for tab</h2>
+  <div data-role="tabs">
+      <ul data-role="listview" data-inset="true" class="tablist-left">
+        <li><a href="#one">one</a></li>
+        <li><a href="#two">two</a></li>
+        <li><a href="#three">three</a></li>
+      </ul>
+      <div id="one" class="tablist-content">
+        <h1>First tab contents</h1>
+      </div>
+      <ul id="two" class="tablist-content" data-role="listview" data-inset="true">
+        <li>
+          <img src="fried-chicken.jpg" alt="" height="100px" width="100px">
+          <p style="font-size: 16px;">(1) Fried Chicken</p>
+          <input type="text" name="" value="Please describe how the food taste like">
+          <button data-icon="check" type="button" name="button" onclick="location.href='https://www.gq.com/story/summer-is-for-fried-chicken'">Click for recipe</button>
+        </li>
+        <li>
+          <img src="sandwich.jpg" alt="" height="100px" width="100px">
+          <p style="font-size: 16px;">(2) Sandwich</p>
+          <input type="text" name="" value="Please describe how the food taste like">
+          <button data-icon="check" type="button" name="button" onclick="location.href='https://www.indianhealthyrecipes.com/sandwich-recipes/'">Click for recipe</button>
+        </li>
+        <li>
+          <img src="jajangmyeon.jpg" alt="" height="100px" width="100px">
+          <p style="font-size: 16px;">(3) Blackbean sauce Noodles</p>
+          <input type="text" name="" value="Please describe how the food taste like">
+          <button data-icon="check" type="button" name="button" onclick="location.href='https://www.saveur.com/story/recipes/korean-black-bean-noodles/'">Click for recipe</button>
+        </li>
+      </ul>
+      <ul id="three" class="tablist-content" data-role="listview" data-inset="true">
+        <li><a href="https://en.wikipedia.org/wiki/Citizen_Kane">Citizen Kane</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Casablanca_(film)">Casablanca</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/The_Godfather">The Godfather</a></li>
+      </ul>
+  </div>
+</body>
+</html>

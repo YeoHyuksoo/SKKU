@@ -1,0 +1,14 @@
+p {font-family:나눔고딕;
+    color:#22CCCC;
+    font-weight: bold}
+.item{
+  color:#555555;
+  font-weight: bold;
+  text-align:center;
+  font-size:15px;
+  text-shadow: 10px 2px 2px #BBBBBB;
+}
+.page:hover{
+  background-color:red;
+  text-transform:uppercase;
+}
